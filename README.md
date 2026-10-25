@@ -24,11 +24,11 @@
 
 | You want to… | Go to |
 |---|---|
-| **Use SikuliX today** | 👉 **[oculix-org/Oculix](https://github.com/oculix-org/Oculix)** — the active fork. Java 17+, current releases (`v3.0.3` stable, `v4.0` in flight). |
+| **Use SikuliX today** | 👉 **[oculix-org/Oculix](https://github.com/oculix-org/Oculix)** — the active successor. Java 17+, current releases on the [releases page](https://github.com/oculix-org/Oculix/releases). |
 | **Report a bug or request a feature** | 👉 **[oculix-org/Oculix/issues](https://github.com/oculix-org/Oculix/issues)** |
 | **Read the public documentation** | 👉 **[docs.oculix.org](https://docs.oculix.org)** |
 | **See RaiMan's original upstream** | 👉 [RaiMan/SikuliX1](https://github.com/RaiMan/SikuliX1) — archived March 2026 by its creator |
-| **Browse the legacy SikuliX1 code** | You're here. Read-only mirror. |
+| **Browse the legacy SikuliX1 code** | You're here. Read-only mirror, frozen at SikuliX 2.0.5. |
 
 ---
 
@@ -38,7 +38,19 @@ SikuliX uses **computer vision** ([OpenCV](https://opencv.org/)) to identify and
 
 The original motto, still valid : *"If you can see it, you can automate it."*
 
-For the modern continuation with OpenCV 4.10 (via Apertix), Java 17+, working VNC stack, Android 12+ ADB, PaddleOCR option, and 22 native-reviewed locales → **[oculix-org/Oculix](https://github.com/oculix-org/Oculix)**.
+For the modern continuation with OpenCV 4.x (via Apertix), Java 17+, working VNC stack, Android ADB, PaddleOCR option, an MCP server and 22 native-reviewed locales → **[oculix-org/Oculix](https://github.com/oculix-org/Oculix)**.
+
+Migrating from SikuliX ? Same API, new coordinates :
+
+```xml
+<!-- before -->
+<groupId>com.sikulix</groupId>
+<artifactId>sikulixapi</artifactId>
+
+<!-- after -->
+<groupId>io.github.oculix-org</groupId>
+<artifactId>oculixapi</artifactId>
+```
 
 ---
 
@@ -48,7 +60,7 @@ A 23-year lineage of MIT-licensed open work :
 
 - **2003 · MIT CSAIL** — Rob Miller's UI Design Group launches the visual automation research project that would become Sikuli.
 - **2009 · UIST paper** — [**@doubleshow**](https://github.com/doubleshow) (Tom Yeh) and [**@vgod**](https://github.com/vgod) (Tsung-Hsiang Chang) formally introduce Sikuli at the ACM Symposium on User Interface Software and Technology. The codebase eventually lands under the [sikuli](https://github.com/sikuli) GitHub organization.
-- **2010–2023 · SikuliX1** — [**@RaiMan**](https://github.com/RaiMan) (Raimund Hocke) takes over as sole maintainer, evolving the project through Java 8 → 11, multi-platform fixes, OCR integration, and 13 years of patient stewardship.
+- **2010–2026 · SikuliX1** — [**@RaiMan**](https://github.com/RaiMan) (Raimund Hocke) takes over as sole maintainer, evolving the project through Java 8 → 11, multi-platform fixes, OCR integration, and sixteen years of patient stewardship, up to the final SikuliX 2.0.5.
 - **March 2026 · oculix-org** — RaiMan archives the upstream and transmits stewardship; active development continues as **OculiX**.
 
 Massive gratitude to all four — without them, this project simply doesn't exist. The MIT license they chose 23 years ago is still in place today, and that's not an accident.
